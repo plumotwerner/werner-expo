@@ -1,0 +1,76 @@
+{
+  "expo": {
+    "name": "werner-expo",
+    "slug": "werner-expo",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/images/icon.png",
+    "scheme": "wernerexpo",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.plumotwerner.wernerexpo",
+      "icon": "./assets/expo.icon"
+    },
+    "android": {
+      "package": "com.plumotwerner.wernerexpo",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#208AEF",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 76
+        }
+      ],
+      "@react-native-community/datetimepicker",
+      "expo-notifications",
+      "expo-sqlite",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to use the camera to take a photo",
+          "recordAudioAndroid": false,
+          "barcodeScannerEnabled": false
+        }
+      ],
+      "./plugins/with-gradle-memory",
+      "expo-font",
+      "expo-image",
+      "expo-status-bar",
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "f588b052-3ede-4342-958b-b1ccd6c90dcb"
+      }
+    },
+    "owner": "plumotwerner",
+    "runtimeVersion": {
+      "policy": "fingerprint"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/f588b052-3ede-4342-958b-b1ccd6c90dcb",
+      "requestHeaders": {
+        "expo-channel-name": "production"
+      }
+    }
+  }
+}
